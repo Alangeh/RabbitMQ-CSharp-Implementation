@@ -127,11 +127,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Lionel\\RabbitMQ\\RabbitMQ-C#\\RabbitMQ-CSharp-Implementation\\Producer\\Producer.csproj",
-      "projectName": "Producer",
-      "projectPath": "D:\\Lionel\\RabbitMQ\\RabbitMQ-C#\\RabbitMQ-CSharp-Implementation\\Producer\\Producer.csproj",
+      "projectUniqueName": "D:\\Lionel\\RabbitMQ\\RabbitMQ-C#\\RabbitMQ-CSharp-Implementation\\Consumer\\Consumer.csproj",
+      "projectName": "Consumer",
+      "projectPath": "D:\\Lionel\\RabbitMQ\\RabbitMQ-C#\\RabbitMQ-CSharp-Implementation\\Consumer\\Consumer.csproj",
       "packagesPath": "C:\\Users\\eryaz\\.nuget\\packages\\",
-      "outputPath": "D:\\Lionel\\RabbitMQ\\RabbitMQ-C#\\RabbitMQ-CSharp-Implementation\\Producer\\obj\\",
+      "outputPath": "D:\\Lionel\\RabbitMQ\\RabbitMQ-C#\\RabbitMQ-CSharp-Implementation\\Consumer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\eryaz\\AppData\\Roaming\\NuGet\\NuGet.Config",
