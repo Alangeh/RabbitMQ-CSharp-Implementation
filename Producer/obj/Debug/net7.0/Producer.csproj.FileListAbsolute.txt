@@ -1,0 +1,17 @@
+D:\Lionel\RabbitMQ\RabbitMQ-C#\RabbitMQ-CSharp-Implementation\Producer\bin\Debug\net7.0\Producer.exe
+D:\Lionel\RabbitMQ\RabbitMQ-C#\RabbitMQ-CSharp-Implementation\Producer\bin\Debug\net7.0\Producer.deps.json
+D:\Lionel\RabbitMQ\RabbitMQ-C#\RabbitMQ-CSharp-Implementation\Producer\bin\Debug\net7.0\Producer.runtimeconfig.json
+D:\Lionel\RabbitMQ\RabbitMQ-C#\RabbitMQ-CSharp-Implementation\Producer\bin\Debug\net7.0\Producer.dll
+D:\Lionel\RabbitMQ\RabbitMQ-C#\RabbitMQ-CSharp-Implementation\Producer\bin\Debug\net7.0\Producer.pdb
+D:\Lionel\RabbitMQ\RabbitMQ-C#\RabbitMQ-CSharp-Implementation\Producer\bin\Debug\net7.0\RabbitMQ.Client.dll
+D:\Lionel\RabbitMQ\RabbitMQ-C#\RabbitMQ-CSharp-Implementation\Producer\obj\Debug\net7.0\Producer.csproj.AssemblyReference.cache
+D:\Lionel\RabbitMQ\RabbitMQ-C#\RabbitMQ-CSharp-Implementation\Producer\obj\Debug\net7.0\Producer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Lionel\RabbitMQ\RabbitMQ-C#\RabbitMQ-CSharp-Implementation\Producer\obj\Debug\net7.0\Producer.AssemblyInfoInputs.cache
+D:\Lionel\RabbitMQ\RabbitMQ-C#\RabbitMQ-CSharp-Implementation\Producer\obj\Debug\net7.0\Producer.AssemblyInfo.cs
+D:\Lionel\RabbitMQ\RabbitMQ-C#\RabbitMQ-CSharp-Implementation\Producer\obj\Debug\net7.0\Producer.csproj.CoreCompileInputs.cache
+D:\Lionel\RabbitMQ\RabbitMQ-C#\RabbitMQ-CSharp-Implementation\Producer\obj\Debug\net7.0\Producer.csproj.CopyComplete
+D:\Lionel\RabbitMQ\RabbitMQ-C#\RabbitMQ-CSharp-Implementation\Producer\obj\Debug\net7.0\Producer.dll
+D:\Lionel\RabbitMQ\RabbitMQ-C#\RabbitMQ-CSharp-Implementation\Producer\obj\Debug\net7.0\refint\Producer.dll
+D:\Lionel\RabbitMQ\RabbitMQ-C#\RabbitMQ-CSharp-Implementation\Producer\obj\Debug\net7.0\Producer.pdb
+D:\Lionel\RabbitMQ\RabbitMQ-C#\RabbitMQ-CSharp-Implementation\Producer\obj\Debug\net7.0\Producer.genruntimeconfig.cache
+D:\Lionel\RabbitMQ\RabbitMQ-C#\RabbitMQ-CSharp-Implementation\Producer\obj\Debug\net7.0\ref\Producer.dll
