@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Producer
-build_property.ProjectDir = D:\Lionel\RabbitMQ\RabbitMQ-C#\RabbitMQ-CSharp-Implementation\Producer\
+build_property.ProjectDir = d:\Lionel\RabbitMQ\RabbitMQ-C#\RabbitMQ-CSharp-Implementation\Producer\
