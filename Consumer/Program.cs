@@ -2,6 +2,7 @@
 using System.Text;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
+using System.Threading.Tasks;
 
 var factory = new ConnectionFactory{ 
     HostName = "localhost"
@@ -19,17 +20,30 @@ channel.QueueDeclare(
     arguments: null
     );
 
+channel.BasicQos(prefetchSize: 0, prefetchCount: 1, global: false);
+
 var consumer = new EventingBasicConsumer(channel);
 
+var random = new Random();
+
 consumer.Received += (model, ea) => {
+
+    var processingTime = random.Next(1, 6);
+
     var body = ea.Body.ToArray();
+
     var message = Encoding.UTF8.GetString(body);
-    Console.WriteLine($"Message Received: {message}");
+
+    Console.WriteLine($"Message Received: {message} will take {processingTime}s to process");
+
+    Task.Delay(TimeSpan.FromSeconds(processingTime)).Wait();
+
+    channel.BasicAck(deliveryTag: ea.DeliveryTag, multiple: false);
 };
 
 channel.BasicConsume(
     queue: "letterbox",
-    autoAck: true,
+    autoAck: false,
     consumer: consumer
 );
 

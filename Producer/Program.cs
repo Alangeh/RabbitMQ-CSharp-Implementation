@@ -25,3 +25,5 @@ var encodedMessage = Encoding.UTF8.GetBytes(message);
 channel.BasicPublish("", "letterbox", null, encodedMessage);
 
 Console.WriteLine($"Published message: {message}");
+
+Console.ReadKey();
