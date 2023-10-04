@@ -14,6 +14,6 @@ var message = "Direct routing braodcast messge";
 
 var body = Encoding.UTF8.GetBytes(message);
 
-channel.BasicPublish(exchange: "pubsub", "analyticskey", null, body);
+channel.BasicPublish(exchange: "routing", "analyticskey", null, body);
 
 Console.WriteLine($"Send message: {message}");
