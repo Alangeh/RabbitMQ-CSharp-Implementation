@@ -9,20 +9,18 @@ using var connection = factory.CreateConnection();
 
 using var channel = connection.CreateModel();
 
-//channel.ExchangeDeclare(exchange: "routing", type: ExchangeType.Direct);
 channel.ExchangeDeclare(exchange: "topicrouting", type: ExchangeType.Topic);
 
 var queueName = channel.QueueDeclare().QueueName;
 
 var consumer = new EventingBasicConsumer(channel);
 
-//channel.QueueBind(queue: queueName, exchange: "routing", routingKey: "paymentskey");
-channel.QueueBind(queue: queueName, exchange: "topicrouting", routingKey: "#.payment");
+channel.QueueBind(queue: queueName, exchange: "topicrouting", routingKey: "user.#");
 
 consumer.Received += (model, ea) => {
     var body = ea.Body.ToArray();
     var message = Encoding.UTF8.GetString(body);
-    Console.WriteLine($"Payments Consumer Received new message: {message}");
+    Console.WriteLine($"Analytics Consumer Received new message: {message}");
 };
 
 channel.BasicConsume(queue: queueName, autoAck: true, consumer: consumer);

@@ -9,13 +9,15 @@ using var connection = factory.CreateConnection();
 
 using var channel = connection.CreateModel();
 
-channel.ExchangeDeclare(exchange: "routing", type: ExchangeType.Direct);
+//channel.ExchangeDeclare(exchange: "routing", type: ExchangeType.Direct);
+channel.ExchangeDeclare(exchange: "topicrouting", type: ExchangeType.Topic);
 
 var queueName = channel.QueueDeclare().QueueName;
 
 var consumer = new EventingBasicConsumer(channel);
 
-channel.QueueBind(queue: queueName, exchange: "routing", routingKey: "analyticskey");
+//channel.QueueBind(queue: queueName, exchange: "routing", routingKey: "analyticskey");
+channel.QueueBind(queue: queueName, exchange: "topicrouting", routingKey: "*.europe.*");
 
 consumer.Received += (model, ea) => {
     var body = ea.Body.ToArray();
