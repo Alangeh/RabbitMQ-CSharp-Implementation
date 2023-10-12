@@ -11,7 +11,7 @@ using var channel = connection.CreateModel();
 
 var replyQueue = channel.QueueDeclare(queue: "", exclusive: true);
 
-channel.QueueDeclare("request-queue", exclusive: false)
+channel.QueueDeclare("request-queue", exclusive: false);
 
 var consumer = new EventingBasicConsumer(channel);
 
@@ -35,7 +35,7 @@ properties.CorrelationId = Guid.NewGuid().ToString();
 
 channel.BasicPublish("", "request-queue", properties, body);
 
-Console.WriteLine($"Sending Request: {properties.CorrelationId}")
+Console.WriteLine($"Sending Request: {properties.CorrelationId}");
 
 Console.WriteLine("Started Client");
 
